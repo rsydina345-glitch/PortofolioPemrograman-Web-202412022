@@ -1,0 +1,254 @@
+<!DOCTYPE html> <!-- Menandakan dokumen menggunakan HTML5 -->
+
+<html lang="id"> <!-- Bahasa halaman Indonesia -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Mendukung karakter khusus -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+
+    <title>Formulir Pendaftaran Mahasiswa Baru</title> <!-- Judul tab browser -->
+</head>
+
+<body style="background-color:#f3f5ff; font-family:Arial,sans-serif; margin:0; padding:30px;"> <!-- Mengatur tampilan dasar halaman -->
+
+    <!-- Logo Kampus -->
+    <div style="text-align:center;"> <!-- Membuat logo berada di tengah -->
+        <img src="gambar.PNG" alt="Logo Kampus" width="95"> <!-- Menampilkan logo kampus -->
+    </div>
+
+    <!-- Judul Halaman -->
+    <h1 style=" 
+        text-align:center;
+        color:#27348b;
+        margin-bottom:5px;">
+        Formulir Pendaftaran Mahasiswa Baru
+    </h1> <!-- Judul utama halaman -->
+
+    <!-- Subjudul -->
+    <p style="
+        text-align:center;
+        color:#666;
+        margin-bottom:30px;">
+        Isi data diri Anda dengan lengkap dan benar.
+    </p> <!-- Petunjuk singkat untuk pengguna -->
+
+    <!-- Container Form -->
+    <div style="
+        width:65%;
+        max-width:750px;
+        margin:auto;
+        background:#ffffff;
+        padding:30px;
+        border-radius:18px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.08);"> <!-- Kotak utama formulir -->
+
+        <!-- Form utama -->
+        <form action="#" method="post"> <!-- Tempat seluruh data formulir dikirim -->
+
+            <!-- DATA PRIBADI -->
+            <fieldset style="
+                border:1px solid #dde3f5;
+                border-radius:12px;
+                padding:20px;
+                margin-bottom:20px;"> <!-- Mengelompokkan data pribadi -->
+
+                <legend style="
+                    color:#4361ee;
+                    font-size:13px;
+                    font-weight:bold;
+                    padding:0 10px;">
+                    DATA PRIBADI
+                </legend> <!-- Judul kelompok data -->
+
+                <!-- Input Nama -->
+                <label for="nama">Nama Lengkap *</label><br>
+
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                    style="
+                    width:100%;
+                    padding:12px;
+                    margin-top:6px;
+                    margin-bottom:15px;
+                    border:1px solid #d5dcf0;
+                    border-radius:8px;
+                    box-sizing:border-box;"> <!-- Kolom nama wajib diisi -->
+
+                <!-- Input Email -->
+                <label for="email">Email *</label><br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="contoh@email.com"
+                    required
+                    style="
+                    width:100%;
+                    padding:12px;
+                    margin-top:6px;
+                    margin-bottom:15px;
+                    border:1px solid #d5dcf0;
+                    border-radius:8px;
+                    box-sizing:border-box;"> <!-- Kolom email dengan validasi email -->
+
+                <!-- Radio Button Jenis Kelamin -->
+                <label>Jenis Kelamin *</label><br><br>
+
+                <input
+                    type="radio"
+                    id="pria"
+                    name="jenis_kelamin"
+                    value="Pria"
+                    required> <!-- Pilihan Pria -->
+
+                <label for="pria">Pria</label>
+
+                &nbsp;&nbsp;
+
+                <input
+                    type="radio"
+                    id="wanita"
+                    name="jenis_kelamin"
+                    value="Wanita"> <!-- Pilihan Wanita -->
+
+                <label for="wanita">Wanita</label>
+
+                <br><br>
+
+                <!-- Textarea Alamat -->
+                <label for="alamat">Alamat Lengkap</label><br>
+
+                <textarea
+                    id="alamat"
+                    name="alamat"
+                    rows="5"
+                    placeholder="Masukkan alamat lengkap"
+                    style="
+                    width:100%;
+                    padding:12px;
+                    border:1px solid #d5dcf0;
+                    border-radius:8px;
+                    box-sizing:border-box;">
+                </textarea> <!-- Kolom alamat lengkap -->
+
+            </fieldset>
+
+            <!-- HOBI -->
+            <fieldset style="
+                border:1px solid #dde3f5;
+                border-radius:12px;
+                padding:20px;
+                margin-bottom:20px;"> <!-- Kelompok pilihan hobi -->
+
+                <legend style="
+                    color:#4361ee;
+                    font-size:13px;
+                    font-weight:bold;
+                    padding:0 10px;">
+                    HOBI
+                </legend>
+
+                <p>Pilih Hobi (boleh lebih dari satu)</p> <!-- Pengguna dapat memilih beberapa hobi -->
+
+                <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                <label for="membaca" style="display:inline;">Membaca</label>
+
+                <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+                <label for="olahraga" style="display:inline;">Olahraga</label>
+
+                <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+                <label for="musik" style="display:inline;">Musik</label>
+
+                <input type="checkbox" id="coding" name="hobi[]" value="Coding">
+                <label for="coding" style="display:inline;">Coding</label>
+
+                <input type="checkbox" id="desain" name="hobi[]" value="Desain">
+                <label for="desain" style="display:inline;">Desain</label>
+
+            </fieldset>
+
+            <!-- JURUSAN -->
+            <fieldset style="
+                border:1px solid #dde3f5;
+                border-radius:12px;
+                padding:20px;
+                margin-bottom:20px;"> <!-- Kelompok pilihan jurusan -->
+
+                <legend style="
+                    color:#4361ee;
+                    font-size:13px;
+                    font-weight:bold;
+                    padding:0 10px;">
+                    JURUSAN
+                </legend>
+
+                <!-- Dropdown Jurusan -->
+                <label for="jurusan">Pilih Jurusan *</label><br><br>
+
+                <select
+                    id="jurusan"
+                    name="jurusan"
+                    required
+                    style="
+                    width:100%;
+                    padding:12px;
+                    border:1px solid #d5dcf0;
+                    border-radius:8px;
+                    box-sizing:border-box;"> <!-- Daftar pilihan jurusan -->
+
+                    <option value="">-- Pilih Jurusan --</option>
+
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Bisnis Digital">Bisnis Digital</option>
+
+                </select>
+
+            </fieldset>
+
+            <!-- Tombol Submit -->
+            <input
+                type="submit"
+                value="Kirim Pendaftaran"
+                style="
+                width:100%;
+                background:#4361ee;
+                color:white;
+                border:none;
+                padding:14px;
+                border-radius:10px;
+                font-size:15px;
+                font-weight:bold;
+                cursor:pointer;"> <!-- Tombol untuk mengirim formulir -->
+
+        </form>
+
+    </div>
+
+    <!-- Link Website Kampus -->
+    <p style="
+        text-align:center;
+        margin-top:25px;
+        color:#666;
+        font-size:14px;"> <!-- Informasi tambahan di bawah formulir -->
+
+        Informasi lebih lanjut kunjungi
+
+        <a href="https://stitek.ac.id/"
+           target="_blank"
+           style="
+           color:#4361ee;
+           text-decoration:none;
+           font-weight:bold;">
+           Website Kampus STITEK
+        </a> <!-- Link menuju website kampus -->
+
+    </p>
+
+</body>
+</html>
