@@ -69,6 +69,12 @@ ditelusuri.
     <td>Integrasi PHP dengan database untuk aplikasi web dinamis</td>
     <td><a href="./PortofolioPemrograman-Web-202412022/modul%206">Buka →</a></td>
   </tr>
+  <tr>
+    <td align="center">06T</td>
+    <td>📝 Tugas Modul 6</td>
+    <td>Studi kasus mandiri integrasi database dan modul CRUD PHP</td>
+    <td><a href="./PortofolioPemrograman-Web-202412022/modul%206%20tugas">Buka →</a></td>
+  </tr>
 </table>
 
 ---
@@ -76,13 +82,15 @@ ditelusuri.
 ## 🗂️ Struktur Folder
 
 ```
-PortofolioPemrograman-Web-202412022-/
-├── Modul-1/     → Dasar HTML
-├── Modul-2/     → Styling CSS
-├── Modul-3/     → JavaScript Dasar
-├── Modul-4/     → JavaScript Lanjutan
-├── Modul-5/     → PHP Dasar
-├── Modul-6/     → PHP & Database
+PortofolioPemrograman-Web-202412022/
+└── PortofolioPemrograman-Web-202412022/
+├── modul 1/      → Dasar HTML
+├── modul 2/      → Styling CSS
+├── modul 3/      → JavaScript Dasar
+├── modul 4/      → JavaScript Lanjutan / Bootstrap
+├── modul 5/      → PHP Dasar
+├── modul 6/      → PHP & Database
+├── modul 6 tugas/→ Implementasi CRUD & Database
 └── README.md
 ```
 
@@ -90,14 +98,14 @@ PortofolioPemrograman-Web-202412022-/
 
 ## 🌿 Alur Pengembangan (Git Workflow)
 
-Setiap modul dikerjakan pada branch terpisah sebelum digabungkan ke `main`:
+Setiap modul dikerjakan pada branch terpisah sebelum digabungkan (*merge*) ke branch utama `main`:
 
 ```
 main
- ├── tugas/modul-1-3
- ├── tugas/modul-4-javascript
- ├── tugas/modul-5
- └── tugas/modul-6
+├── tugas/modul-1-3
+├── tugas/modul-4-5-6
+└── tugas/modul-6
+
 ```
 
 ---
@@ -118,5 +126,6 @@ main
 4. [Modul 4 - Bootstrap](./PortofolioPemrograman-Web-202412022/modul%204)
 5. [Modul 5 - PHP Dasar](./PortofolioPemrograman-Web-202412022/modul%205)
 6. [Modul 6 - PHP dan MySQL](./PortofolioPemrograman-Web-202412022/modul%206)
+7. [Modul 6 (Tugas) - Implementasi Database](./PortofolioPemrograman-Web-202412022/modul%206%20tugas)
 
 ---
